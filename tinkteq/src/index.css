@@ -1,0 +1,64 @@
+/* filepath: /c:/Users/victory.balogun/Desktop/side projects/tinkteq-assessment/tinkteq/src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #060606;
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #eeeeef;
+  }
+  
+  @layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+
+
+@layer base {
+  body {
+    @apply bg-[#d2d2d2] dark:bg-[#0a0a0a] text-black  dark:text-white;
+  }
+}
+
+
+
+  /* add dark theme for body  */
+    body {
+        font-family: "Urbanist", sans-serif;
+        transition: background-color 0.5s;
+
+    }
+
+    input, select{
+      padding: 16px !important;
+      outline: none;
+      border: none;
+
+    }
+
+    input:focus, select:focus{
+      border: 1px solid #b6b6b6;
+    }
