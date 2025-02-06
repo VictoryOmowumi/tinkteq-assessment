@@ -67,8 +67,8 @@ This project is a logistics dashboard for Tinkteq, allowing users to view and tr
           Yup: A JavaScript schema builder for value parsing and validation.
           Socket.io: A library for real-time web applications.
           Tailwind CSS: A utility-first CSS framework for rapid UI development
-      5. **Setup Notes**
+   5. **Setup Notes**
          
-              Ensure that you have Node.js and npm installed on your machine.
-              The WebSocket server should be running on http://localhost:4000. You can start the server by running node server.js.
-              The project uses Tailwind CSS for styling. Ensure that you have the necessary PostCSS and Autoprefixer plugins installed.
+          Ensure that you have Node.js and npm installed on your machine.
+          The WebSocket server should be running on http://localhost:4000. You can start the server by running node server.js.
+          The project uses Tailwind CSS for styling. Ensure that you have the necessary PostCSS and Autoprefixer plugins installed.
