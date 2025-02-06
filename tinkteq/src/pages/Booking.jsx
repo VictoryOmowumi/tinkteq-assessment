@@ -6,6 +6,7 @@ import ShipmentDetails from '../components/bookingForm/ShipmentDetails';
 import ReviewBooking from '../components/bookingForm/ReviewBooking';
 import PriceSummary from '../components/bookingForm/PriceSummary';
 import LocationDetails from '../components/bookingForm/LocationDetails';
+import ProgressBar from '../components/tracking/ProgressBar';
 import { shipmentDetailsSchema, locationDetailsSchema, pricingSchema, contactSchema } from '../utils/validationSchema';
 const STEPS = [
   { title: 'Shipment Details', component: ShipmentDetails, schema: shipmentDetailsSchema },
@@ -32,6 +33,7 @@ const Booking = () => {
         <h1 className="text-3xl font-bold  mb-2">Cargo Shipment Booking</h1>
         <p className="text-gray-600 dark:text-gray-300">Complete the form below to schedule your cargo shipment</p>
       </div>
+      <ProgressBar currentStep={currentStep} />
       <div className="w-full lg:min-w-4xl mx-auto md:px-4 pb-8">
       <Formik
      initialValues={formData}

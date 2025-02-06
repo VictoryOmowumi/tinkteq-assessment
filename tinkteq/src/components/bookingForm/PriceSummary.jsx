@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import { DollarSign, Info } from 'lucide-react';
-import { calculatePrice } from '../../utils/calculatePrice';
 import { useFormikContext } from 'formik';
 const PriceSummary = () => {
    
